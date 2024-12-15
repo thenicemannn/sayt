@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* font-family: ; */
+    background-color: #7AB2D3;
+}
+header{
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #4A628A;
+}
+nav{
+    display: flex;
+    gap: 216px;
+}
+.menu_link{
+    background-color: #D9D9D9;
+    padding: 8px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner{
+    height: 90vh;
+    width: 100%;
+    background-image: url(img/фон.png);
+    background-position: center;
+    background-size: cover;
+}
