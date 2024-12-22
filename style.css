@@ -5,7 +5,8 @@ body{
     background-color: #7AB2D3;
 }
 header{
-    height: 10vh;
+    padding-top: 5px;
+    padding-bottom: 5px;
     position: fixed;
     top: 0;
     left: 0;
@@ -33,4 +34,35 @@ nav{
     background-image: url(img/фон.png);
     background-position: center;
     background-size: cover;
+}
+
+.product{
+    background-color: white;
+    border-radius: 15px;
+    width: 224px; height: 334px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.catalog{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 15vh;
+}
+.catalog2{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    gap: 15vh;
+}
+.buy{
+    font-family: "Russo One";
+    text-decoration: none;
+    background: #5F80E3;
+    padding: 3px;
+    border-radius: 17px;
 }
