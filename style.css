@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    /* font-family: ; */
+    font-family: "Russo one" ;
     background-color: #7AB2D3;
 }
 header{
@@ -65,4 +65,9 @@ nav{
     background: #5F80E3;
     padding: 3px;
     border-radius: 17px;
+    color: white;
+}
+
+.product img{
+    width: 100%;
 }
