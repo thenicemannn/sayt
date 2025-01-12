@@ -8,7 +8,9 @@ function getCardHTML(product){
     return `
     <div class="product">
                 <img src="img/${product.image}" alt="">
-                <p class="price">${product.title}</p>
+                <p class="name">${product.title}</p>
+                <p class="price">${product.price}₴</p>
+                
                 <a href="" class="buy">в корзину</a>
             </div>
         `
@@ -33,3 +35,42 @@ getProducts().then(function(products){
     }
 })
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+function searchProducts(event) {
+    event.preventDefault(); // Забороняє перезавантаження сторінки при відправці форми
+
+    let query = document.querySelector('#searchForm input').value.toLowerCase();
+    let productsList = document.querySelector('.products-list');
+    productsList.innerHTML = ''; // Очищаємо список товарів
+
+    // Відображаємо товари на сторінці
+    getProducts().then(function (products) {
+        let productsList = document.querySelector('.products-list');
+        products.forEach(function (product) {
+            if (product.title.toLowerCase().includes(query) || product.description.toLowerCase().includes(query)) {
+                productsList.innerHTML += getCardHTML(product);
+            }
+        });
+
+        // Отримуємо всі кнопки "Купити" на сторінці
+        let buyButtons = document.querySelectorAll('.products-list .cart-btn');
+        // Додаємо обробник подій на кожну кнопку "Купити"
+        if (buyButtons) {
+            buyButtons.forEach(function (button) {
+                button.addEventListener('click', addToCart);
+            });
+        }
+    });
+}

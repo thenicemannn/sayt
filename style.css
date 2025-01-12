@@ -28,12 +28,20 @@ nav{
     justify-content: center;
     align-items: center;
 }
+
+.menu_link img{
+    width: 30px;
+    height: 30px;
+}
 .banner{
     height: 90vh;
     width: 100%;
     background-image: url(img/фон.png);
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .product{
@@ -70,4 +78,16 @@ nav{
 
 .product img{
     width: 100%;
+}
+.price{
+    font-family: "Russo One";
+}
+form{
+    width: fit-content;
+    background-color: black;
+    padding: 10px;
+    border-radius: 15px;
+}
+.form_imput{
+    font-family: "Russo One";
 }
