@@ -51,13 +51,13 @@ getProducts().then(function(products){
 function searchProducts(event) {
     event.preventDefault(); // Забороняє перезавантаження сторінки при відправці форми
 
-    let query = document.querySelector('#searchForm input').value.toLowerCase();
-    let productsList = document.querySelector('.products-list');
+    let query = document.querySelector('.form_input').value.toLowerCase();
+    let productsList = document.querySelector('.catalog');
     productsList.innerHTML = ''; // Очищаємо список товарів
 
     // Відображаємо товари на сторінці
     getProducts().then(function (products) {
-        let productsList = document.querySelector('.products-list');
+        let productsList = document.querySelector('.catalog');
         products.forEach(function (product) {
             if (product.title.toLowerCase().includes(query) || product.description.toLowerCase().includes(query)) {
                 productsList.innerHTML += getCardHTML(product);
@@ -65,7 +65,7 @@ function searchProducts(event) {
         });
 
         // Отримуємо всі кнопки "Купити" на сторінці
-        let buyButtons = document.querySelectorAll('.products-list .cart-btn');
+        let buyButtons = document.querySelectorAll('.buy');
         // Додаємо обробник подій на кожну кнопку "Купити"
         if (buyButtons) {
             buyButtons.forEach(function (button) {
@@ -74,3 +74,6 @@ function searchProducts(event) {
         }
     });
 }
+let searchForm = document.getElementById('searchForm')
+console.log(searchForm)
+searchForm.addEventListener('sumbit',searchProducts);
