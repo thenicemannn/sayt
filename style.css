@@ -84,10 +84,36 @@ nav{
 }
 form{
     width: fit-content;
-    background-color: black;
+    background-color: #5F80E3;
     padding: 10px;
     border-radius: 15px;
-}
-.form_imput{
     font-family: "Russo One";
+    display: flex;
+    align-items: center;
+}
+
+.dn{
+    display: none;
+}
+.form_input{
+    font-family: "Russo One";
+    padding: 10px 30px;
+    border-radius: 6px 0 0 6px;
+    border: 2px solid #4A628A;
+}
+.form_btn{
+    font-family: "Russo One";
+    padding: 10px 30px;
+    border-radius: 0 6px 6px 0;
+
+}
+
+.form_btn:hover{
+    
+}
+h1{
+    color: wheat;
+    padding: 10px 30px;
+    background-color: rgb(95, 128, 227, 0.5);
+    
 }
