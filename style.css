@@ -117,3 +117,19 @@ h1{
     background-color: rgb(95, 128, 227, 0.5);
     
 }
+
+.left_side{
+    width: 30%;
+    background-color: #fdfdfd;
+}
+
+
+.cart_main{
+    margin-top: 100px;
+    background-color: #5F80E3;
+}
+
+.cart_item img{
+    width:224px ;
+    height:334px ;
+}
