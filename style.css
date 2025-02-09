@@ -47,7 +47,7 @@ nav{
 .product{
     background-color: white;
     border-radius: 15px;
-    width: 224px; height: 334px;
+    width: 25%;
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -67,11 +67,13 @@ nav{
     padding: 30px;
     gap: 15vh;
 }
-.buy{
+.buy_btn{
     font-family: "Russo One";
     text-decoration: none;
+    font-size: 20px;
     background: #5F80E3;
-    padding: 3px;
+    padding: 5px 15px;
+    text-transform: uppercase;
     border-radius: 17px;
     color: white;
 }
@@ -115,6 +117,7 @@ h1{
     color: wheat;
     padding: 10px 30px;
     background-color: rgb(95, 128, 227, 0.5);
+    border-radius: 10px;
     
 }
 
@@ -127,6 +130,7 @@ h1{
 .cart_main{
     margin-top: 100px;
     background-color: #5F80E3;
+    
 }
 
 .cart_item img{

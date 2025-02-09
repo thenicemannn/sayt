@@ -11,7 +11,7 @@ function getCardHTML(product){
                 <p class="name">${product.title}</p>
                 <p class="price">${product.price}₴</p>
                 
-                <a href="" class="buy">в корзину</a>
+                <a href="" class="buy_btn">в корзину</a>
             </div>
         `
 }
